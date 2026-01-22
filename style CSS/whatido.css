@@ -1,0 +1,74 @@
+.all-service{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: start;
+  max-width: 2650px;
+  min-width: 600px;
+  justify-content: center;
+  gap: 40px;
+  margin: 24px;
+}
+.service-todo{
+  display: grid;
+  grid-template-rows: 36px  55px 60px 1fr;
+  gap: 8px;
+  width: 280px;
+  background-color: rgb(0, 0, 0,0.02);
+  padding: 30px 20px ;
+  border-radius: 20px;
+  transition-duration:0.2 ;
+  transition:transform,  0.2s ease-out ;
+  transition-timing-function: ease-out;
+  transition-property: transform, box-shadow;
+  transition-delay: 0.3s;
+}
+
+.service-todo:hover{
+  background-color: rgba(0, 132, 255, 0.01);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-10px);
+  transition: 0.3s;
+}
+
+
+.icon-todo{
+  font-size: 36px;
+  justify-self: center;
+  width: 36px;
+  height: 36px;
+  padding: 5px 5px;
+  border-radius: 12%;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0,0.9)
+}
+.descr-do{
+  font-size: 16px;
+  font-weight: lighter;
+  place-items: center;
+  color: rgba(0, 0, 0,0.7);
+  border-width: 0px 0px 1px 0px;
+  border-bottom-color:  rgba(0, 0, 0,0.03);;
+  border-style: solid;
+}
+.role-todo{
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(0, 0, 0,0.7);
+  justify-self: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 8px;
+  border-width: 0px 0px 1px 0px;
+  border-bottom-color:  rgba(0, 0, 0,0.04);;
+  border-style: solid;
+}
+.skills-container{
+  display: inline-block;
+  color: rgb(0, 0, 0,0.5);
+  background-color:rgb(0, 0, 0,0.05);
+  margin-top: 8px;
+  padding: 5px 5px ;
+  border-radius: 30px;
+  
+}

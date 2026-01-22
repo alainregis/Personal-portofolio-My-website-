@@ -1,0 +1,344 @@
+
+.CasestudyH1 {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.H1 {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 8px;
+}
+
+.H2 {
+  font-size: 42px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.85);
+}
+
+.H3 {
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  margin-top: 60px;
+}
+
+.h4 {
+  font-size: 36px;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.85);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.case-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  max-width: 2650px;
+  min-width: 500px;
+  min-height: 500px;
+  align-content: center;
+
+}
+
+
+
+.cardexp-grid {
+  display: grid;
+  grid-template-rows: 300px 300px;
+  gap: 30px;
+  margin-top: -90px;
+}
+
+.card-case {
+  width: 450px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  margin-inline: auto;
+}
+
+.card-case:hover {
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.04);
+
+}
+
+
+@media (max-width:300px){
+.card-case {
+  width: 100px;
+  
+}
+
+}
+
+.card-img {
+  width: 450px;
+  height: 300px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 20px;
+
+}
+.card-img:hover{
+
+  color:inset black;
+}
+
+.company-name {
+  font-size: 26px;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.9);
+  margin-top: 12px;
+
+}
+
+.sub-descr {
+  width: 450px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.65);
+  margin-top: 8px;
+
+}
+
+.subheader-grid {
+  margin-top: 0px;
+  margin-bottom: 8px;
+  display: grid;
+  grid-template-columns: 80px 122px 100px;
+
+}
+
+.subheadr1 {
+  border-radius: 36px;
+  border-color: rgba(0, 132, 255, 0.1);
+  border-width: 1px;
+  border-style: solid;
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.7);
+  width: 50px;
+  height: 38px;
+  font-weight: normal;
+  font-size: 16px;
+  align-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+
+.subheadr2 {
+  border-radius: 36px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgba(0, 132, 255, 0.1);
+  border-width: 1px;
+  border-style: solid;
+  color: rgba(0, 0, 0, 0.7);
+  width: 92px;
+  height: 38px;
+  font-weight: normal;
+  font-size: 16px;
+  align-content: center;
+  padding-left: 10px;
+  padding-right: 10px;
+
+}
+
+.subheadr3 {
+  border-radius: 36px;
+  font-weight: normal;
+  align-content: center;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.7);
+  width: 80px;
+  height: 38px;
+  background-color: rgb(255, 255, 255);
+  border-color: rgba(0, 132, 255, 0.1);
+  border-width: 1px;
+  border-style: solid;
+  padding-left: 10px;
+  padding-right: 10px;
+
+
+}
+
+.button-card {
+  display: inline-block;
+  font-size: 24px;
+  border-radius: 8px;
+  border-style: solid;
+  margin-top: 16px;
+  background-color: black;
+  color: white;
+  width: 430px;
+  height: 56px;
+
+}
+
+.card-experience {
+  display: grid;
+  margin-left: 96px;
+
+}
+
+.header-logo {
+  width: 48px;
+  height: 48px;
+  position: relative;
+  top: 50px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-style: solid;
+  border-radius: 4px;
+  padding: 10px 10px;
+  border-color: rgba(0, 132, 255, 0.15);
+  ;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 56px;
+
+}
+
+.header-logo1 {
+  width: 42px;
+  height: 42px;
+  position: relative;
+  top: 300px;
+  left: 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-style: solid;
+  margin-left: 10px;
+  border-radius: 4px;
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-color: rgba(0, 132, 255, 0.15);
+  ;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 56px;
+
+}
+
+
+.logo {
+
+  width: 48px;
+  height: 48px;
+  z-index: 100;
+  border-radius: 4px;
+}
+
+.logo1 {
+  width: 42px;
+}
+
+.bar1 {
+  position: relative;
+  top: 160px;
+  left: -130px;
+  border-radius: 24px;
+  transform: rotate(90deg);
+  background-color: rgba(0, 132, 255, 0.1);
+  ;
+  width: 350px;
+  height: 2px;
+  z-index: -1;
+
+}
+
+.card-content {
+  width: 440px;
+  height: 250px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 76px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-width: 1px;
+  border-radius: 20px;
+  background-color: white;
+  border-color: rgba(0, 132, 255, 0.15);
+  border-style: solid;
+}
+
+.card-content:hover {
+  transform: -90px;
+}
+
+
+
+  .company {
+
+  font-size: 36px;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 4px;
+
+}
+
+.role {
+
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.task1 {
+
+  width: 360px;
+  padding-bottom: 10px;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 16px;
+  font-weight: 400;
+
+
+}
+
+.task2 {
+  width: 360px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 400;
+  font-size: 16px;
+
+}
+
+.task3 {
+  width: 360px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+
+
+
+.header-1 {
+  display: inline-block;
+  width: 420px;
+  background-color: rgba(0, 0, 0, 0.03);
+  padding-bottom: 20px;
+  padding: 10px 10px;
+  border-radius: 12px;
+}
+
+.subheader-task {
+  background-color: rgb(255, 255, 255);
+  padding-left: 20px;
+  margin-top: 20px;
+
+}
+
+
+@media (max-width:500px){
+.card-content {
+  width: 300px;
+  
+}
+
+}

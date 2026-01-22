@@ -1,0 +1,36 @@
+.footer-content{
+  background-color: black;
+  padding: 10px 0px;
+  margin-top: 24px;
+  gap: 8px;
+  
+}
+
+.based-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-content{
+ font-size: 24px;
+ color: rgba(255, 255, 255,0.99); 
+}
+
+.text-context{
+font-size: 16px;
+height: 24px;
+font-weight: 500;
+color: rgba(255, 255, 255,0.99);
+}
+
+.copyright-content{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex:1;
+ font-weight: 200;
+ font-size: 14px;
+ color: rgba(255, 255, 255,0.99);
+ padding-top: 8px;
+}

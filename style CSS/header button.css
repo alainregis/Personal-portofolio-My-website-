@@ -1,0 +1,107 @@
+
+
+button {
+  font-family: arial;
+}
+
+div {
+  font-family: arial;
+
+}
+
+
+
+.bio-intro {
+
+  font-size: 16px;
+  color: gray;
+  font-weight: 400;
+  width: 558px;
+  background-color: rgba(238, 238, 238, 0.4);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-color: black;
+  border-width: 2px;
+
+}
+
+
+.behance-icon {
+  min-height: 100vh;
+  margin-left: 10px;
+  margin-right: 10px;
+  z-index: 100;
+}
+
+
+
+.arrow-button1 {
+  font-size: 20px;
+  width: 20px;
+  height: 20px;
+  align-content: center;
+  padding-left: 10px;
+
+}
+
+
+.H1 {
+  display: flex;
+  margin-top: 36px;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+  flex: 1;
+  justify-content: center;
+
+}
+
+.H2 {
+  display: flex;
+  font-size: 64px;
+  margin-bottom: 36px;
+  margin-top: 16px;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.8);
+  flex: 1;
+  justify-content: center;
+}
+
+.casestudyH1 {
+  display: flex;
+
+}
+
+.star1 {
+  position: absolute;
+  top: 1090px;
+  left: 1650px;
+  width: 150px;
+  z-index: -1;
+
+}
+
+.H3 {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  margin-top: 24px;
+
+}
+
+
+
+.h4 {
+  font-size: 64px;
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.8);
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 24px;
+}

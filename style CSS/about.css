@@ -1,0 +1,149 @@
+
+
+.aboutme-flex {
+  display: flex;
+  /* 📌 Active le mode Flexbox pour organiser les enfants */
+  flex-direction: row;
+  /* 📌 Les éléments sont côte à côte (horizontal) */
+  flex-wrap: wrap;
+  /* ✅ RESPONSIVE: permet aux éléments de passer à la ligne 
+                                 si l'écran devient trop étroit */
+  gap: 36px;
+  /* 📌 Espace de 40px entre les éléments */
+  padding: 0 20px;
+  /* 📌 Marge interne gauche/droite de 20px */
+  max-width: 1600px;
+  min-width: 1024px;
+  /* ✅ RESPONSIVE: largeur maximale pour ne pas s'étirer 
+                                 infiniment sur très grands écrans */
+  margin: 0 0px;
+  max-width: 2560px;
+  min-width: 200px;
+  max-height: 1300px;
+  min-height: 200px;
+  border-bottom-left-radius: 42px;
+  border-bottom-right-radius: 62px;
+  /* 📌 Centre le conteneur horizontalement */
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  /* 📌 Les enfants sont empilés verticalement */
+  margin-top: 72px;
+  margin-left: 0;
+  width: 100%;
+  /* ✅ RESPONSIVE: prend 100% de la largeur disponible */
+  max-width: 850px;
+  /* ✅ RESPONSIVE: mais ne dépasse jamais 800px */
+  flex: 1;
+  /* ✅ RESPONSIVE: s'étend pour remplir l'espace disponible */
+  min-width: 300px;
+  /* ✅ RESPONSIVE: ne rétrécit jamais en dessous de 300px */
+}
+.picture-content{
+ margin-inline: auto;
+}
+.picturemine {
+
+  width: 400px;
+  background-color: rgba(109, 218, 255,0.2);
+  /* ✅ RESPONSIVE: l'image prend 100% de son conteneur */
+  max-width: 400px;
+  /* ✅ RESPONSIVE: mais ne dépasse jamais 450px */
+  height: 60;
+  /* ✅ RESPONSIVE: la hauteur s'ajuste automatiquement 
+                                 pour garder les proportions de l'image */
+  margin: 36px;
+  
+  border-radius: 902px;
+}
+
+.second-bio {
+  
+  
+  
+  /* ✅ RESPONSIVE: s'étend pour remplir l'espace */
+  margin-left: 20px;
+  /* ⚠️ Cette marge fixe sera supprimée sur tablette/mobile */
+}
+
+.bio-2 {
+  color: rgba(0, 0, 0, 0.75);
+  font-family:"Space Grotesk", sans-serif ;
+  font-size: clamp(18px, 3vw, 24px);
+  font-weight: 10;
+  display: flex;
+  /* ⚠️ Cette taille sera réduite sur petits écrans *
+  font-weight: normal;
+  width: 100%;
+  /* ✅ RESPONSIVE: prend toute la largeur disponible */
+  max-width: 1600px;
+  min-width: 450px;
+  flex-wrap: wrap;
+  /* ✅ RESPONSIVE: largeur maximale */
+  margin-top: 24px;
+  line-height: 1.4;
+  /* 📌 Espacement entre les lignes pour lisibilité */
+}
+
+.title-bio {
+  margin-left: 20px;
+  /* ⚠️ Cette marge sera supprimée sur tablette/mobile */
+  font-size: 56px;
+  /* ⚠️ Cette taille sera réduite progressivement */
+  font-weight: bolder;
+  color: rgba(0, 0, 0, 0.8);
+  width: 900px;
+}
+
+@media screen and (max-width: 1024px) {
+  .aboutme-flex{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .second-bio{
+    width: 900px;
+
+  }
+  .title-bio {
+    text-align: center;
+  }
+  .second-bio {
+    text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 820px) {
+
+  .title-bio{
+    width: 750px;
+  }
+
+  .second-bio{
+    width:750px ;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title-bio{
+    font-size: 42px;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .second-bio{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .picturemine {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+  }
+  
+}

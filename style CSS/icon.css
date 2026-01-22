@@ -1,0 +1,44 @@
+
+.text-social{
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(0, 0, 0,0.8);
+}
+
+.all-icon{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  justify-content:center ;
+  max-width: 1800px;
+  margin-inline: auto;
+  font-size: 36px;
+}
+
+.icon-adj{
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  width:100px;
+  font-size: 32px;
+  gap: 5px;
+  padding: 10px 20px;
+  border-radius: 32px;
+  border-color: rgba(0, 132, 255, 0.05);
+  border-style: solid;
+  border-width: 1px;
+  transition: 0.4s;
+  cursor: pointer;
+}
+.icon-name{
+  color: rgba(0, 0, 0,0.7);
+  font-size: 16px;
+  align-content: center;
+}
+.icon-adj:hover{
+background-color: rgba(0, 132, 255, 0.05);
+
+}
+
