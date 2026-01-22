@@ -12,17 +12,13 @@
   /* 📌 Espace de 40px entre les éléments */
   padding: 0 20px;
   /* 📌 Marge interne gauche/droite de 20px */
-  max-width: 1600px;
-  min-width: 1024px;
-  /* ✅ RESPONSIVE: largeur maximale pour ne pas s'étirer 
-                                 infiniment sur très grands écrans */
-  margin: 0 0px;
   max-width: 2560px;
-  min-width: 200px;
+  min-width: 0;
   max-height: 1300px;
   min-height: 200px;
   border-bottom-left-radius: 42px;
   border-bottom-right-radius: 62px;
+  margin: 0 auto;
   /* 📌 Centre le conteneur horizontalement */
 }
 
@@ -71,15 +67,15 @@
 .bio-2 {
   color: rgba(0, 0, 0, 0.75);
   font-family:"Space Grotesk", sans-serif ;
-  font-size: clamp(18px, 3vw, 24px);
+  font-size: clamp(16px, 3vw, 24px);
   font-weight: 10;
   display: flex;
-  /* ⚠️ Cette taille sera réduite sur petits écrans *
+  /* ⚠️ Cette taille sera réduite sur petits écrans */
   font-weight: normal;
   width: 100%;
   /* ✅ RESPONSIVE: prend toute la largeur disponible */
   max-width: 1600px;
-  min-width: 450px;
+  min-width: 0;
   flex-wrap: wrap;
   /* ✅ RESPONSIVE: largeur maximale */
   margin-top: 24px;
@@ -90,47 +86,55 @@
 .title-bio {
   margin-left: 20px;
   /* ⚠️ Cette marge sera supprimée sur tablette/mobile */
-  font-size: 56px;
+  font-size: clamp(32px, 8vw, 56px);
   /* ⚠️ Cette taille sera réduite progressivement */
   font-weight: bolder;
   color: rgba(0, 0, 0, 0.8);
-  width: 900px;
+  width: 100%;
+  max-width: 900px;
 }
 
 @media screen and (max-width: 1024px) {
   .aboutme-flex{
     display: flex;
     flex-direction: column;
-    
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .about-me{
+    width: 100%;
+    max-width: 100%;
+    margin-top: 40px;
   }
 
   .second-bio{
-    width: 900px;
-
+    width: 100%;
+    max-width: 100%;
   }
+  
   .title-bio {
     text-align: center;
+    margin-left: 0;
+    width: 100%;
   }
+  
   .second-bio {
     text-align: center;
   }
 
-}
-
-@media screen and (max-width: 820px) {
-
-  .title-bio{
-    width: 750px;
-  }
-
-  .second-bio{
-    width:750px ;
+  .bio-2{
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 768px) {
+  .aboutme-flex{
+    padding: 0 16px;
+  }
+  
   .title-bio{
-    font-size: 42px;
+    font-size: clamp(28px, 8vw, 42px);
     width: 100%;
     margin-left: 0;
   }
@@ -140,10 +144,34 @@
     margin-left: 0;
   }
 
+  .bio-2{
+    font-size: clamp(14px, 4vw, 18px);
+    padding: 0 10px;
+  }
+
   .picturemine {
-    width: 300px;
+    width: 280px;
+    max-width: 100%;
     height: auto;
-    margin: 20px;
+    margin: 20px auto;
   }
   
+  .about-me{
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .picturemine {
+    width: 240px;
+    margin: 16px auto;
+  }
+  
+  .title-bio{
+    font-size: 28px;
+  }
+  
+  .bio-2{
+    font-size: 15px;
+  }
 }

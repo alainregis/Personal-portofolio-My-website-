@@ -73,7 +73,7 @@ body {
   font-weight: 500;
   margin-top: 24px;
   margin-bottom: 20px;
-  font-size: 42px;
+  font-size: clamp(16px, 5vw, 42px);
   font-family:"Space Grotesk", sans-serif ;
   padding: 0 20px;
   text-align: center;
@@ -98,7 +98,8 @@ body {
 .button-CV {
   display: flex;
   flex-direction: row;
-  width: 270px;
+  width: 100%;
+  max-width: 270px;
   gap: 5px;
   justify-content:space-between;
   background-color: rgb(255, 255, 255);
@@ -238,7 +239,8 @@ body {
     font-size: 20px;
   }
   .button-CV{
-    width: 230px;
+    max-width: 230px;
+    width: 100%;
     gap: 5px;
   }
 
@@ -272,7 +274,8 @@ body {
   }
 
   .button-CV{
-    width: 210px;
+    max-width: 210px;
+    width: 100%;
     gap: 0px;
     align-items: center;
   }
@@ -332,29 +335,51 @@ body {
     font-size: clamp(20px, 10vw, 28px);
   }
   .name-intro{
-    font-size: clamp(130px, 10vw, 145px);
+    font-size: clamp(36px, 12vw, 60px);
     width: 100%;
   }   
 
   .role-name {
-    font-size:18px;
+    font-size: clamp(14px, 4vw, 18px);
     font-weight: 600;
-    padding: 0px;
-
+    padding: 0 16px;
+    line-height: 1.4;
   }
+  
   .header-bio
   {
-    width: 80%;
-    font-size: 16px;
+    width: 90%;
+    font-size: 15px;
     font-weight: 400;
     text-align: center;
+    padding: 0 16px;
   }
 
   .social-icon{
    font-size: 24px;
    justify-content: center;
-   margin: 32px;
-
+   margin: 24px 16px;
+   gap: 16px;
+  }
+  
+  .social-icon1{
+    font-size: 20px;
+  }
+  
+  .button-CV{
+    max-width: 200px;
+    width: 90%;
+  }
+  
+  .cv-container{
+    font-size: 16px;
+    padding: 10px 8px;
+  }
+  
+  .icon-arrow{
+    font-size: 20px;
+    height: 20px;
+    padding: 8px 6px;
   }
 
 }

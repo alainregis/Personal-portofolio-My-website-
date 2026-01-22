@@ -11,7 +11,7 @@
 }
 
 .H2 {
-  font-size: 42px;
+  font-size: clamp(28px, 6vw, 42px);
   font-weight: 700;
   color: rgba(0, 0, 0, 0.85);
 }
@@ -24,7 +24,7 @@
 }
 
 .h4 {
-  font-size: 36px;
+  font-size: clamp(28px, 6vw, 36px);
   font-weight: 700;
   color: rgba(0, 0, 0, 0.85);
   text-align: center;
@@ -36,10 +36,11 @@
   flex-wrap: wrap;
   gap: 50px;
   max-width: 2650px;
-  min-width: 500px;
-  min-height: 500px;
+  min-width: 0;
+  min-height: 0;
   align-content: center;
-
+  justify-content: center;
+  padding: 0 20px;
 }
 
 
@@ -52,7 +53,8 @@
 }
 
 .card-case {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   padding: 10px 10px;
@@ -66,17 +68,90 @@
 }
 
 
-@media (max-width:300px){
-.card-case {
-  width: 100px;
+@media screen and (max-width: 768px) {
+  .case-grid {
+    gap: 30px;
+    padding: 0 16px;
+  }
   
+  .card-case {
+    max-width: 100%;
+    padding: 12px;
+  }
+  
+  .card-img {
+    max-width: 100%;
+    height: auto;
+    min-height: 180px;
+  }
+  
+  .sub-descr {
+    max-width: 100%;
+    font-size: 14px;
+  }
+  
+  .company-name {
+    font-size: 22px;
+  }
+  
+  .subheader-grid {
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    gap: 8px;
+  }
+  
+  .subheadr1, .subheadr2, .subheadr3 {
+    width: auto;
+    min-width: 60px;
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }
 
+@media screen and (max-width: 480px) {
+  .case-grid {
+    gap: 24px;
+    padding: 0 12px;
+  }
+  
+  .card-case {
+    padding: 10px;
+  }
+  
+  .card-img {
+    min-height: 160px;
+  }
+  
+  .company-name {
+    font-size: 20px;
+  }
+  
+  .sub-descr {
+    font-size: 13px;
+  }
+  
+  .H1 {
+    font-size: 14px;
+  }
+  
+  .H2 {
+    font-size: 28px;
+  }
+  
+  .H3 {
+    font-size: 14px;
+  }
+  
+  .h4 {
+    font-size: 24px;
+  }
 }
 
 .card-img {
-  width: 450px;
-  height: 300px;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  min-height: 200px;
+  max-height: 300px;
   object-fit: cover;
   object-position: top;
   border-radius: 20px;
@@ -96,11 +171,12 @@
 }
 
 .sub-descr {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   font-weight: normal;
   color: rgba(0, 0, 0, 0.65);
   margin-top: 8px;
-
+  font-size: clamp(14px, 2vw, 16px);
 }
 
 .subheader-grid {
@@ -251,8 +327,10 @@
 }
 
 .card-content {
-  width: 440px;
-  height: 250px;
+  width: 100%;
+  max-width: 440px;
+  min-height: 250px;
+  height: auto;
   display: inline-block;
   margin-left: 20px;
   margin-bottom: 76px;
@@ -335,10 +413,64 @@
 }
 
 
-@media (max-width:500px){
-.card-content {
-  width: 300px;
+@media screen and (max-width: 768px) {
+  .cardexp-grid {
+    grid-template-rows: auto;
+    gap: 24px;
+    margin-top: 40px;
+    padding: 0 16px;
+  }
   
+  .card-experience {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .card-content {
+    width: 100%;
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 20px;
+    padding: 16px;
+  }
+  
+  .header-1 {
+    width: 100%;
+    max-width: 100%;
+  }
+  
+  .task1, .task2, .task3 {
+    width: 100%;
+    max-width: 100%;
+    font-size: 14px;
+  }
+  
+  .company {
+    font-size: 28px;
+  }
+  
+  .header-logo, .header-logo1 {
+    position: static;
+    margin: 0 auto 20px;
+  }
+  
+  .bar1 {
+    display: none;
+  }
 }
 
+@media screen and (max-width: 500px) {
+  .card-content {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+  }
+  
+  .company {
+    font-size: 24px;
+  }
+  
+  .task1, .task2, .task3 {
+    font-size: 13px;
+  }
 }
