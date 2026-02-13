@@ -23,16 +23,18 @@
   <link rel="stylesheet" href="style CSS/footer.css">
   <link rel="stylesheet" href="style CSS/whatido.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-
+  <link rel="stylesheet" href="style CSS/card-projects.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style CSS/fonts.css">
   <link rel="stylesheet" href="style CSS/main.css">
 
 </head>
 
 <body>
-  <div class="allheader-flex">
+
+   <div class="allheader-flex">
 
     <div class="header-flex">
       <div class="left-sider">
@@ -73,7 +75,7 @@
        
       </div>
 
-       <div class="icon-burger-container">
+       <div class="icon-burger-container" onclick="console.log(`Burger menu clicked `)">
 
           <span class="iconify" data-icon="stash:burger-classic"></span>
           
@@ -86,6 +88,28 @@
 
   </div>
 
+  <!-- Diagnostic: logs Iconify and icon replacement status -->
+  <script>
+    (function(){
+      function whenReady(cb){
+        if(document.readyState !== 'loading') return cb();
+        document.addEventListener('DOMContentLoaded', cb);
+      }
+      whenReady(function(){
+        console.log('Iconify present:', !!window.Iconify);
+        var spans = document.querySelectorAll('.iconify');
+        console.log('Iconify spans found:', spans.length);
+        var svgCount = 0;
+        spans.forEach(function(s, i){
+          var hasSvg = !!s.querySelector('svg');
+          if(hasSvg) svgCount++;
+          console.log(i + ':', s.getAttribute('data-icon'), 'hasSVG:', hasSvg, s.innerHTML.trim());
+        });
+        console.log('SVG replaced count:', svgCount, 'of', spans.length);
+      });
+    })();
+  </script>
+
   <div class="Header-salutation">
 
     <div class="hi1"> Hello there, </div>
@@ -95,6 +119,7 @@
 
 
   <div class="name-intro"> I'm Alain Regis</div>
+  
 
   <div class="role-name">
 
@@ -144,8 +169,8 @@
         About Me.
 
       </div>
-      <div class="second-bio">
-        <div class="bio-2">
+      <div class="bio-2">
+        <div class="second-bio">
           I am a Product Designer and Front-End Developer, passionate about the intersection of design
           and technology.
           I imagine and build digital experiences that are useful and accessible, combining product thinking, attention
@@ -162,9 +187,12 @@
     <div class="picture-content">
       
       <img class="picturemine" src="cover heading/Gemini_Generated_Image_om21onom21onom21 1.png">
-
+      
+      <span class="container-star">&#10023;</span>
 
     </div>
+
+    
   </div>
 
   <div class="H5">
@@ -178,7 +206,8 @@
   </div>
 
   <div class="all-service">
-    <div class="service-todo">
+    <div class="service-todo-1">
+        <div class="service-todo">
 
       <div class="icon-todo">
         <span class="iconify" data-icon="solar:code-line-duotone"></span>
@@ -193,12 +222,28 @@
       </div>
       <div class="skills">
        <p class="skills-container">
-         &#183 HTML/CSS &#183
+         &#183 HTML &#183
          </p>
+
+        <p class="skills-container">
+         &#183 CSS &#183
+         </p>
+
+        <p class="skills-container">
+         &#183 Javascript &#183
+        </p>
+      <p class="skills-container">
+         &#183 React &#183
+      </p>
+
+
       </div>
     </div>
+       </div>
+    
+    <div class="service-todo-2"> 
 
-    <div class="service-todo">
+       <div class="service-todo">
 
       <div class="icon-todo">
         <span class="iconify" data-icon="ion:server-sharp"></span>
@@ -213,10 +258,13 @@
       </div>
       <div class="skills">
         <p class="skills-container">
-        &#183 Node.Js
+        &#183 Node.Js &#183
          </p>
       </div>
     </div>
+    </div>
+   
+    <div class="service-todo-3">
 
     <div class="service-todo">
 
@@ -236,7 +284,7 @@
         &#183 Design system &#183 
          </p>
           <p class="skills-container">
-        &#183  Design system &#183 
+        &#183  Wireframing &#183 
          </p>
             <p class="skills-container">
         &#183 Responsive design &#183 
@@ -254,10 +302,13 @@
 
   </div>
 
+    </div>
+    
 
   <div class="all-icon">
+    <div class="icon-group">
 
-    <div class="icon-adj">
+      <div class="icon-adj">
       <span class="iconify" data-icon="material-icon-theme:vscode"></span>
       <div class="icon-name"> Vscode</div>
     </div>
@@ -297,10 +348,116 @@
       <span class="iconify" data-icon="logos:css-3"></span>
       <div class="icon-name"> CSS3</div>
     </div>
+    </div>
+    
+    <div arial hidden class="icon-group">
+      <div  class="icon-adj">
+      <span class="iconify" data-icon="material-icon-theme:vscode"></span>
+      <div class="icon-name"> Vscode</div>
+    </div>
+
+    <div class="icon-adj">
+      <span class="iconify" data-icon="logos:figma"></span>
+      <div class="icon-name"> Figma</div>
+    </div>
+
+
+    <div class="icon-adj">
+      <span class="iconify" data-icon="logos:framer"></span>
+      <div class="icon-name"> Framer</div>
+    </div>
+
+    <div class="icon-adj">
+      <span class="iconify" data-icon="logos:miro-icon"></span>
+      <div class="icon-name"> Miro</div>
+    </div>
+    <div class="icon-adj">
+      <span class="iconify" data-icon="devicon-plain:cursor"></span>
+      <div class="icon-name"> Cursor</div>
+    </div>
+
+    <div class="icon-adj">
+      <span class="iconify" data-icon="devicon:javascript"></span>
+      <div class="icon-name"> javascript</div>
+    </div>
+
+    <div class="icon-adj">
+      <span class="iconify" data-icon="logos:html-5"></span>
+      <div class="icon-name">HTML5</div>
+
+    </div>
+
+    <div class="icon-adj">
+      <span class="iconify" data-icon="logos:css-3"></span>
+      <div class="icon-name"> CSS3</div>
+    </div>
+    </div>
+     
 
   </div>
 
+    <div class="CasestudyH1">
+    <div>
+      <div class="H1">
+        Here's some of my works
+      </div>
+
+    </div>
+    <div>
+      <p class="H2">
+        Projects
+    </div>
+  </div>
+
+  <div class="all-card-pojects">
+
+    <div class="card-project">
+
+      <div class="card-container-project-img" >
+
+        <img class="card-project-img"  src="cover heading/homescreen12112.png"> 
+      </div>
+        <div class="all-descript-card">
+          <div class="project-name">
+        WherePlat
+      </div>
+      <div class="sub-descrpt-project">
+          I led a complete redesign of the SIIB E-commerce suite to enhance user experience, retention, engagement, and
+          growth. 
+      </div>
+       <p class="role-subheader"> Role: Frontend developper - UI/UX Designer </p>
+
+          <div class="subheader-grid-project">
+
   
+      <div class="subheadr-project">
+
+          Javascript
+
+        </div>
+
+        <div class="subheadr-project">
+
+          React
+
+        </div>
+
+        <div class="subheadr-project">
+
+          Pyton
+
+        </div>
+
+      </div>
+
+        
+        
+
+      </div>
+
+    </div>
+
+
   <div class="CasestudyH1">
     <div>
       <div class="H1">
@@ -424,6 +581,7 @@
 
   <div class="header-logo">
     <img class="logo" src="cover heading/aclis.jpg">
+    <div class="arrow-container-1">&#9654;</div>
   </div>
   <div class="container-bar">
     <div class="bar1"></div>
@@ -431,6 +589,7 @@
 
   <div class="header-logo1">
     <img class="logo1" src="cover heading/logo officiel1.png">
+    <div class="arrow-container-2">&#9654;</div>
   </div>
 
   <div class="cardexp-grid">
@@ -465,7 +624,7 @@
     </div>
 
 
-    <div class="card-experience">
+    <div class="card-experience-2">
 
       <div class="card-content">
         <div class="header-1">
@@ -473,7 +632,7 @@
             SIIB Network
           </div>
           <div class="role">
-            &#183 Graphic Designer - UI/UX Designer &#183 Intership
+            &#183 Graphic Designer - UI/UX Designer &#183 Remote  
           </div>
         </div>
 
@@ -483,7 +642,7 @@
           </div>
 
           <div class="task2">
-            &#183Redesigned the whole xperience of E-commerce plateform across for mobiles devices
+            &#183Redesigned the whole experience of E-commerce plateform across for mobiles devices
           </div>
 
           <div class="task3">
@@ -588,13 +747,13 @@
     </div>
 
     <div class="email-cont">
-      <div class="headline">
-        Github
-      </div>
+        <div class="headline">
+          Github
+        </div>
 
-      <div class="subheadline">
-        View my code
-      </div>
+        <div class="subheadline">
+          View my code
+        </div>
     </div>
 
 

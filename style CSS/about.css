@@ -10,6 +10,7 @@
                                  si l'écran devient trop étroit */
   gap: 36px;
   /* 📌 Espace de 40px entre les éléments */
+  margin-top: 150px;
   padding: 0 20px;
   /* 📌 Marge interne gauche/droite de 20px */
   max-width: 2560px;
@@ -42,8 +43,8 @@
 }
 .picturemine {
 
-  width: 400px;
-  background-color: rgba(109, 218, 255,0.2);
+  width: 300px;
+  background-color: rgb(199, 241, 255);
   /* ✅ RESPONSIVE: l'image prend 100% de son conteneur */
   max-width: 400px;
   /* ✅ RESPONSIVE: mais ne dépasse jamais 450px */
@@ -55,8 +56,32 @@
   border-radius: 902px;
 }
 
+.container-star {
+  font-size: 700px;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
+  text-stroke: 1px rgba(0, 0, 0, 0.3);
+  background-color: transparent;
+  color: transparent;
+  -moz-text-stroke: 7px rgba(0, 0, 0, 0.3);
+  stroke-width: 7px;
+  position: absolute;
+  top: 500px;
+  right: 25px;
+  animation: rotate 5s linear infinite;
+  transform-origin:start;
+  z-index: -1;
+}
+
+@keyframes rotate{
+0%{ transform: rotate(-50%, -50%) (0deg); }
+ 100%{ transform: rotate(360deg); }
+}
+
+
+
 .second-bio {
-  
+  font-family:"Space Grotesk", sans-serif ;
+  animation: slideinleft 1s ease-in 1s 1 normal forwards;
   
   
   /* ✅ RESPONSIVE: s'étend pour remplir l'espace */
@@ -85,6 +110,7 @@
 
 .title-bio {
   margin-left: 20px;
+  font-family:"Space Grotesk", sans-serif ;
   /* ⚠️ Cette marge sera supprimée sur tablette/mobile */
   font-size: clamp(32px, 8vw, 56px);
   /* ⚠️ Cette taille sera réduite progressivement */
@@ -140,13 +166,16 @@
   }
 
   .second-bio{
-    width: 100%;
+    width: 90%;
     margin-left: 0;
+    text-align: start;
+
   }
 
   .bio-2{
-    font-size: clamp(14px, 4vw, 18px);
+    font-size: clamp(14px, 4vw, 24px);
     padding: 0 10px;
+    justify-content: center;
   }
 
   .picturemine {
@@ -154,6 +183,11 @@
     max-width: 100%;
     height: auto;
     margin: 20px auto;
+  }
+  .container-star{
+    font-size: 600px;
+    top: 780px;
+    right: 130px;
   }
   
   .about-me{
@@ -163,8 +197,9 @@
 
 @media screen and (max-width: 480px) {
   .picturemine {
-    width: 240px;
+    width: 100%;
     margin: 16px auto;
+    max-width: 200px;
   }
   
   .title-bio{
@@ -174,4 +209,11 @@
   .bio-2{
     font-size: 15px;
   }
+  .container-star{
+    font-size: 500px;
+    top: 700px;
+    left: 15px;
+    transform-origin: right;
+  }
+  
 }
