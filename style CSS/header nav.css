@@ -8,6 +8,8 @@
   position: sticky;
   top: 0;
   right: 10px;
+  z-index: 1000;
+  isolation: isolate;
 
   
 }
@@ -15,6 +17,7 @@
   width: 1200px;
   height: 75px;
   display: flex;
+  position: relative;
   flex-direction: row;
   background-color: rgba(255, 255, 255,0.4) ;
   margin-top: 10px;
@@ -25,7 +28,7 @@
   border-width: 1px;
   border-style: solid;
   border-color: rgba(0, 0, 0,0.05);
-  z-index: 100;
+  z-index: 1001;
   backdrop-filter: blur(10px);
 }
 .left-sider{
@@ -37,7 +40,7 @@
   flex: 1;
   justify-content:end;
   display: flex;
-  gap: 10px;
+  gap: 24px;
 }
 
 .projet-button {
@@ -204,7 +207,7 @@
     width: 28px;
     position: fixed;
     top: 20px;
-    right: 190px;
+    right: 90px;
     z-index: 100;
   }
 }
@@ -222,7 +225,7 @@
   
   .container-darkmode{
     top: 24px;
-    left: 220px;
+    left: 2800px;
     font-size: 20px;
     height: 20px;
     width: 20px;

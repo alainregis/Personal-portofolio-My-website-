@@ -100,11 +100,13 @@
   }
 
   .header-logo1{
-    top:280px;
-    left: 25px;
+    top:380px;
+    left: -45px;
   }
 
   .bar1{
+    max-height: 150px;
+    height: 100%;
     top: 160px;
     left: -50px;
   }
@@ -127,6 +129,7 @@
     width: 20px;
     height: 20px;
   }
+
 }
 
 @media screen and (max-width: 600px) {

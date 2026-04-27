@@ -34,13 +34,15 @@
 .case-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
-  max-width: 2650px;
+  gap: 42px;
+  width: 100%;
+  max-width: 1248px;
   min-width: 0;
   min-height: 0;
   align-content: center;
   justify-content: center;
-  padding: 0 20px;
+  margin: 0 auto;
+ 
 }
 
 
@@ -54,12 +56,12 @@
 
 .card-case {
   width: 100%;
-  max-width: 535px;
-  background-color: rgba(255, 255, 255, 0.2);
+  max-width: 380px;
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 20px;
   padding: 10px 10px;
   margin-bottom: 20px;
-  margin-inline: auto;
+  transition: box-shadow 0.3s ease;
 }
 
 .card-case:hover {
@@ -68,18 +70,45 @@
 
 }
 
+
+
 .card-img {
   width: 100%;
   max-width: 550px;
-  min-width: 350px;
-  min-height: 200px;
-  max-height: 350px;
+  max-height: 300px;
   object-fit: cover;
   object-position: top;
   border-radius: 20px;
 
 }
 
+.company-name--icon-link-flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+  .company-name {
+    font-size: clamp(28px, 4vw, 36px);
+    display: block;
+    text-align: start;
+  }
+  .card-case {
+    width: auto;
+    max-width: none;
+    padding: 12px;
+    justify-content: center;
+  }
+  .subheader-grid {
+    place-items: space-between;
+    gap: 8px;
+  }
+  
+}
 
 
 @media screen and (max-width: 768px) {
@@ -92,13 +121,18 @@
   }
 
   .case-grid {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
     gap: 30px;
     padding: 0 16px;
   }
 
   .card-case {
-    max-width: 80%;
+    max-width:fit-content;
+    width: 75%;
     padding: 12px;
+    justify-content: center;
   }
 
   .card-img {
@@ -188,72 +222,77 @@
   margin-top: 12px;
 
 }
+.card-container-icon{
+  font-size: 24px;
+  color: rgba(0, 132, 255, 0.8);
+  margin-top: 8px;
+}
 
 .sub-descr {
   width: 100%;
   max-width: 775px;
-  font-weight: normal;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.8);
   margin-top: 8px;
-  font-size: clamp(14px, 2vw, 20px);
+  font-size: clamp(12px, 2vw, 16px);
 }
 
 .subheader-grid {
   margin-top: 0px;
   margin-bottom: 8px;
-  display: grid;
-  grid-template-columns: 80px 122px 100px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
   gap: 12px;
 
 }
 
-.subheadr1 {
-  border-radius: 36px;
-  border-color: rgba(0, 132, 255, 0.1);
-  border-width: 1px;
-  border-style: solid;
-  background-color: rgb(255, 255, 255);
-  color: rgba(0, 0, 0, 0.7);
-  width: 50px;
-  height: 38px;
-  font-weight: normal;
-  font-size: 16px;
-  align-content: center;
-  padding-left: 10px;
-  padding-right: 10px;
-
-
+.subheadr1,
+.subheadr2,
+.subheadr3 {
+  display: flex;
+  align-items: center;
+  justify-content: start;
 }
 
-.subheadr2 {
+.subheadr1 {
+  max-height: 100px;
+  height: 32px;
   border-radius: 36px;
-  background-color: rgb(255, 255, 255);
-  border-color: rgba(0, 132, 255, 0.1);
-  border-width: 1px;
-  border-style: solid;
+  background-color: rgba(0, 0, 0,0.05);
+  border:rgba(0, 132, 255, 0.4) solid  1px 36px;
   color: rgba(0, 0, 0, 0.7);
-  width: 100px;
-  height: 38px;
-  font-weight: normal;
+  font-weight: 300;
   font-size: 16px;
-  align-content: center;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-items: center;
+
+}
+.subheadr2 {
+  height: 32px;
+  border-radius: 36px;
+  background-color: rgba(0, 0, 0,0.05);
+  border:rgba(0, 132, 255, 0.4) solid  1px 36px;
+  color: rgba(0, 0, 0, 0.7);
+  font-weight: 300;
+  font-size: 16px;
+  text-align: center;
   padding-left: 10px;
   padding-right: 10px;
 
 }
 
 .subheadr3 {
+  height:32px;
   border-radius: 36px;
-  font-weight: normal;
-  align-content: center;
+  font-weight: 300;
+  text-align: center;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.7);
-  width: 90px;
-  height: 38px;
-  background-color: rgb(255, 255, 255);
-  border-color: rgba(0, 132, 255, 0.1);
-  border-width: 1px;
-  border-style: solid;
+  background-color: rgba(0, 0, 0,0.05);
+  border:rgba(0, 132, 255, 0.1) solid  1px 36px;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -279,7 +318,7 @@
 }
 
 .card-experience-2{
-  padding-left: 52em;
+  padding-left: 4em;
 }
 
 
@@ -289,7 +328,7 @@
   height: 48px;
   position: relative;
   top: 50px;
-  left: 760px;
+  left: 48px;
   background-color: rgba(255, 255, 255, 0.9);
   border-style: solid;
   border-radius: 4px;
@@ -303,12 +342,12 @@
 }
 
 .arrow-container-1{
-  transform: rotate(-180deg);
+  transform: rotate(0deg);
   position:absolute ;
   color: rgb(255, 255, 255);
   font-size: 24px;
   top: 20px;
-  left:-16px;
+  left:60px;
   z-index: -1;
 }
 
@@ -317,17 +356,13 @@
   height: 42px;
   position: relative;
   top: 335px;
-  left: 765px;
+  left: 55px;
   background-color: rgba(255, 255, 255, 0.9);
-  border-style: solid;
   border-radius: 4px;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-color: rgba(0, 132, 255, 0.15);
-  border-style: solid;
-  border-width: 2px;
   border-radius: 56px;
   z-index: -1;
 }
@@ -336,7 +371,7 @@
   color: rgb(255, 255, 255);
   font-size: 24px;
   
-  top: 0px;
+  top: 15px;
   left:56px;
   z-index: -1;
 }
@@ -372,9 +407,9 @@
 .card-content {
   width: 100%;
   height: 70%;
-  max-width: 600px;
+  max-width: 1300px;
   max-height: 305px;
-  margin-left: 20px;
+  margin-left: 86px;
   margin-bottom: 76px;
   padding-top: 10px;
   padding-bottom: 30px;
@@ -420,7 +455,7 @@
 }
 
 .task2 {
-  width: 550px;
+  max-width: fit-content;
   margin-bottom: 10px;
   color: rgba(0, 0, 0, 0.9);
   font-weight: 400;
@@ -429,7 +464,7 @@
 }
 
 .task3 {
-  width: 550px;
+  max-width: fit-content;
   margin-bottom: 10px;
   color: rgba(0, 0, 0, 0.8);
   font-weight: 400;
@@ -437,7 +472,7 @@
 }
 
 .header-1 {
-  width: auto-fit;
+  max-width: 1300px;
   background-color: rgba(0, 0, 0, 0.03);
   padding-bottom: 20px;
   padding: 10px 10px;
@@ -452,12 +487,12 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
 
   .cardexp-grid {
-    grid-template-rows: auto;
-    gap: 54px;
-    margin-top: -100px;
+    grid-template-rows: fit-content fit-content;
+    gap: 36px;
+    margin: -45px 0px;
     padding: 0 86px;
   }
 
@@ -472,9 +507,9 @@
   }
 
   .card-content {
-    width: 90%;
-    height: 80%;
-    max-width: 100%;
+    width: 100%;
+    height: 90%;
+    max-width: 1000px;
     margin-left: 0;
     margin-bottom: 20px;
     padding: 16px;
@@ -483,22 +518,25 @@
   .subheader-grid {
     grid-template-columns: auto;
     gap: 8px;
-    place-items: center;
+    place-items: space-between;
   }
 
   .subheadr1,
   .subheadr2,
   .subheadr3 {
-    font-size: 20px;
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 300;
     height:50%;
-    width: 90%;
+    width: auto-fit;
+    padding: 8px ;
     text-align: center;
     
   }
 
   .header-1 {
-    width: 93%;
-    max-width: 100%;
+    width: 98%;
+    max-width: auto;
+    
   }
 
   .task1,
@@ -515,19 +553,25 @@
 
   .header-logo {
     position: relative;
-    top: 40px;
+    top: 85px;
     left: 20px;
     z-index: -1;
 
   }
-
-
+  .arrow-container-1{
+    transform: rotate(360deg);
+    left: 59px;
+  }
   .header-logo1 {
-    position: relative;
     top: 380px;
     left: 20px;
     z-index: -1;
 
+  }
+  .arrow-container-2{
+    top : 15px;
+    left: 55px;
+    z-index: -1;
   }
 
   .bar1 {
@@ -546,17 +590,18 @@
     max-height: 300px ;
   }
   .cardexp-grid{
-    gap: 5em;
+    gap: 8em;
     padding: 0px 0px;
+    margin: 2px 0px;
   }
   .card-experience{
-    padding-top: 3em;
+    padding-top: 1em;
   }
 
   .card-case {
-    width: 100%;
-    max-width:90% ;
-    padding: 0px;
+    width: 80%;
+    height: 100%;
+    padding: 12px;
   }
   .sub-descr {
     padding: 1em;
@@ -565,16 +610,27 @@
   }
   .header-logo{
     top: 0;
-    left: 125px;
+    left: 160px;
   }
   .header-logo1{
-    top: 100px;
-    left: 0px;
+    top: 0px;
+    left: 160px;
+  }
+
+
+  .arrow-container-1{
+    position: absolute;
+    transform: rotate(90deg);
+    color: rgb(255, 255, 255);
+    font-size: 24px;
+    top: 60px;
+    left: 25px;
+    z-index: -1;
   }
   .card-content {
     width:100%;
-    height: 87%;
-    max-width: 310px;
+    height: 100%;
+    max-width: 410px;
     max-height: 440px;
     padding: 12px;
   }
@@ -587,7 +643,7 @@
   }
 
   .header-1{
-   max-width: 100%; 
+   max-width: 1000px; 
   }
 
   .company {
@@ -608,9 +664,8 @@
   .subheadr1,
   .subheadr2,
   .subheadr3 {
-    
+    font-size: 16px;
     width: auto-fit;
-    height: 20px;
     text-align: center;
   }
 }

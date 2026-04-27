@@ -56,39 +56,15 @@
   border-radius: 902px;
 }
 
-.container-star {
-  font-size: 700px;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.3);
-  text-stroke: 1px rgba(0, 0, 0, 0.3);
-  background-color: transparent;
-  color: transparent;
-  -moz-text-stroke: 7px rgba(0, 0, 0, 0.3);
-  stroke-width: 7px;
-  position: absolute;
-  top: 500px;
-  right: 25px;
-  animation: rotate 5s linear infinite;
-  transform-origin:start;
-  z-index: -1;
-}
-
-@keyframes rotate{
-0%{ transform: rotate(-50%, -50%) (0deg); }
- 100%{ transform: rotate(360deg); }
-}
 
 
 
 .second-bio {
   font-family:"Space Grotesk", sans-serif ;
   animation: slideinleft 1s ease-in 1s 1 normal forwards;
-  
-  
-  /* ✅ RESPONSIVE: s'étend pour remplir l'espace */
   margin-left: 20px;
-  /* ⚠️ Cette marge fixe sera supprimée sur tablette/mobile */
+  z-index: -1;
 }
-
 .bio-2 {
   color: rgba(0, 0, 0, 0.75);
   font-family:"Space Grotesk", sans-serif ;

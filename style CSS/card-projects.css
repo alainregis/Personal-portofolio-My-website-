@@ -1,4 +1,4 @@
-.al-card-projects{
+.all-card-projects{
   align-self: center;
 }
 .card-project{
@@ -6,7 +6,7 @@
   width: auto;
   max-width: 450px;
   max-height: 500px;
-  grid-template-rows: 480px 1fr ;
+  grid-template-rows: 300px 1fr ;
   background-color: rgb(255, 255, 255);
   margin: 2em;
   padding: 12px 12px;
@@ -22,8 +22,8 @@
 .card-project-img{
 width: 100%;
 border-radius: 1em;
-max-height: 480px;
-object-fit: cover;
+max-height: 300px;
+object-fit: contain;
 object-position: top;
 
 }
@@ -43,12 +43,25 @@ place-items: center;
 }
 .all-descript-card{
   display: grid;
-  position: relative;
-  top: -200px;
-  bottom: 0px;
-  background-color: white;
+  max-height: 160px;
+  height: 100%;
+  background: rgb(255, 255, 255);
   padding: 0px 8px;
 
+}
+.all-descript-card:before{
+  content: "";
+  position: absolute;
+  inset: -35% -15% auto;
+  height: 220px;
+  background: radial-gradient(circle at top center,
+    rgba(0, 132, 255, 0.26) 0%,
+    rgba(73, 181, 255, 0.16) 28%,
+    rgba(255, 255, 255, 0) 72%);
+  filter: blur(34px);
+  opacity: 0.95;
+  pointer-events: none;
+  z-index: -1;
 }
 .sub-descrpt-project{
   font-size: 18px;
@@ -73,5 +86,48 @@ place-items: center;
   font-size: 16px;
   font-weight: 00;
 
+}
+@media screen and (max-width: 1024px) {
+  .card-project{
+    width: 45%;
+    max-width: none;
+    max-height: none;
+    margin: 2em 2em;
+  }
+  .company-name{
+    
+    font-size: clamp(28px, 4vw, 36px);
+    display: block;
+    text-align: start;
+  }
+  .subheader-grid{
+    grid-template-columns: auto;
+    gap: 8px;
+    place-items: center;
+  }
+  .subheader1{
+    font-size: 18px;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .card-project{
+    width: 55%;
+    max-width: none;
+    max-height: none;
+    margin: 2em 2em;
+  }
+  
+}
+@media screen and (max-width: 480px) {
+  .card-project{
+    width: 75%;
+    max-width: none;
+    max-height: none;
+    margin: 2em 2em;
+  }
+
+  
 }
 
