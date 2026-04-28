@@ -199,6 +199,10 @@
   .icon-burger-container{
     visibility: visible;
     display: flex;
+    transition: 0.4s;
+  }
+  .icon-burger-container:hover{
+    background-color: rgba(0, 0, 0,0.05);
   }
 
   .container-darkmode{
@@ -208,7 +212,7 @@
     position: fixed;
     top: 20px;
     right: 90px;
-    z-index: 100;
+    z-index: 1001;
   }
 }
 

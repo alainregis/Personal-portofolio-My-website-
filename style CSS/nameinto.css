@@ -165,10 +165,15 @@ body {
   align-items: center;
   padding: 10px 10px;
   border-radius: 64px;
-  transform: rotate(320deg);
+  transform: rotate(-45deg);
   cursor: pointer;
+  transition: 0.1s ease;
   
   
+}
+.icon-arrow :hover{
+  
+  transform: rotate(-250deg);
 }
 
 .social-icon{

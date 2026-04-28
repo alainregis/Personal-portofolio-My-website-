@@ -32,13 +32,14 @@
 }
 
 .case-grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 450px 450px ;
   gap: 42px;
   width: 100%;
   max-width: 1248px;
   min-width: 0;
   min-height: 0;
+  place-items: center;
   align-content: center;
   justify-content: center;
   margin: 0 auto;
@@ -66,7 +67,7 @@
 
 .card-case:hover {
 
-  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.04);
+  box-shadow: 0px 10px 24px rgba(0, 132, 255, 0.2);
 
 }
 
@@ -129,8 +130,8 @@
   }
 
   .card-case {
-    max-width:fit-content;
-    width: 75%;
+    max-width:max-content;
+    width: 65%;
     padding: 12px;
     justify-content: center;
   }
@@ -170,6 +171,7 @@
   .case-grid {
     gap: 24px;
     padding: 0 12px;
+    justify-content: center;
   }
   .card-content{
 
@@ -443,32 +445,16 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
-.task1 {
+.task1, .task2, .task3{
 
-  width: 550px;
+  width: max-content;
   padding-bottom: 10px;
   color: rgba(0, 0, 0, 0.9);
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
+  margin: 10px 0px 10px 0px;
 
 
-}
-
-.task2 {
-  max-width: fit-content;
-  margin-bottom: 10px;
-  color: rgba(0, 0, 0, 0.9);
-  font-weight: 400;
-  font-size: 16px;
-
-}
-
-.task3 {
-  max-width: fit-content;
-  margin-bottom: 10px;
-  color: rgba(0, 0, 0, 0.8);
-  font-weight: 400;
-  font-size: 16px;
 }
 
 .header-1 {
@@ -503,6 +489,8 @@
   }
 
   .card-experience-2{
+    max-width:1000px ;
+    width: 100%;
     padding-left: 2em;
   }
 
@@ -535,7 +523,7 @@
 
   .header-1 {
     width: 98%;
-    max-width: auto;
+    
     
   }
 
@@ -544,7 +532,7 @@
   .task3 {
     width: 100%;
     max-width: 100%;
-    font-size: 14px;
+    font-size: 20px;
   }
 
   .company {
@@ -553,7 +541,7 @@
 
   .header-logo {
     position: relative;
-    top: 85px;
+    top: 80px;
     left: 20px;
     z-index: -1;
 
@@ -564,7 +552,7 @@
   }
   .header-logo1 {
     top: 380px;
-    left: 20px;
+    left:20px;
     z-index: -1;
 
   }
@@ -590,7 +578,7 @@
     max-height: 300px ;
   }
   .cardexp-grid{
-    gap: 8em;
+    gap: 10em;
     padding: 0px 0px;
     margin: 2px 0px;
   }
@@ -613,8 +601,16 @@
     left: 160px;
   }
   .header-logo1{
-    top: 0px;
-    left: 160px;
+    top: 475px;
+    left: 100px;
+    
+  }
+
+  .arrow-container-2{
+    top: 50px;
+    left: 22px;
+    transform: rotate(90deg);
+
   }
 
 
@@ -628,10 +624,10 @@
     z-index: -1;
   }
   .card-content {
-    width:100%;
+    width:82%;
     height: 100%;
     max-width: 410px;
-    max-height: 440px;
+    max-height: 650px;
     padding: 12px;
   }
   
@@ -639,7 +635,7 @@
     width: 100%;
     height: 100%;
     max-width: 380px;
-    max-height: 650px;
+
   }
 
   .header-1{
@@ -658,14 +654,20 @@
 
   .subheader-grid {
     grid-template-columns: auto;
-    gap: 6px;
+    flex-wrap: wrap;
+    gap: 8px;
   }
 
   .subheadr1,
   .subheadr2,
   .subheadr3 {
     font-size: 16px;
-    width: auto-fit;
+    width: fit-content;
+    max-width: 100%;
+    min-width: 0;
+    min-height: 32px;
+    height: auto;
     text-align: center;
+    white-space: normal;
   }
 }

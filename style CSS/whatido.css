@@ -80,7 +80,7 @@
 
 .service-todo:hover{
   background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 12px 24px rgba(0, 132, 255, 0.2);
   transform: translateY(-10px);
   z-index: 2;
 
