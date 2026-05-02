@@ -117,23 +117,35 @@
 .card-casestudy-icon-link{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   font-size: 32px;
   width: 24px;
   height: 24px;
   padding: 4px 4px;
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.05);
-  transform: rotate(45deg);
+ transform: rotate(45deg);
   cursor: pointer;
   transition: 0.6s ease-in-out;
   
 }
+.card-case:hover .card-casestudy-icon-link{
+  background-color: rgb(0, 0, 0);
+  color: white;
 
+    
+}
 .card-casestudy-icon-link:hover {
+  width:150px;
   background-color: rgb(0, 0, 0);
   color: white;
   transform: translateY(-10%);
-  transform: rotate(400deg);
-   
+  transform: rotate(00deg);
+  display: visible;
+   border-radius: 10%;
+  
+}
+
+.text-icon-card-link:hover{
+  color: white;
 }
