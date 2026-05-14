@@ -260,7 +260,7 @@
   max-height: 100px;
   height: 32px;
   border-radius: 36px;
-  background-color: rgba(0, 0, 0,0.05);
+  background-color:rgba(0, 132, 255, 0.051);
   border:rgba(0, 132, 255, 0.4) solid  1px 36px;
   color: rgba(0, 0, 0, 0.7);
   font-weight: 300;
@@ -274,7 +274,7 @@
 .subheadr2 {
   height: 32px;
   border-radius: 36px;
-  background-color: rgba(0, 0, 0,0.05);
+  background-color: rgba(0, 132, 255, 0.051);
   border:rgba(0, 132, 255, 0.4) solid  1px 36px;
   color: rgba(0, 0, 0, 0.7);
   font-weight: 300;
@@ -292,7 +292,7 @@
   text-align: center;
   font-size: 16px;
   color: rgba(0, 0, 0, 0.7);
-  background-color: rgba(0, 0, 0,0.05);
+  background-color: rgba(0, 132, 255, 0.051);
   border:rgba(0, 132, 255, 0.1) solid  1px 36px;
   padding-left: 10px;
   padding-right: 10px;
@@ -325,8 +325,9 @@
 
 
 .header-logo {
-  width: 48px;
-  height: 48px;
+  display: flex;
+  width: 72px;
+  height: 72px;
   position: relative;
   top: 50px;
   left: 48px;
@@ -348,13 +349,15 @@
   color: rgb(255, 255, 255);
   font-size: 24px;
   top: 20px;
-  left:60px;
+  left:65px;
   z-index: -1;
 }
 
 .header-logo1 {
-  width: 42px;
-  height: 42px;
+  display: flex;
+  flex-direction: center;
+  width: 72px;
+  height: 72px;
   position: relative;
   top: 335px;
   left: 55px;
@@ -371,9 +374,8 @@
   position:absolute ;
   color: rgb(255, 255, 255);
   font-size: 24px;
-  
-  top: 15px;
-  left:56px;
+  top: 20px;
+  left:65px;
   z-index: -1;
 }
 
@@ -381,15 +383,15 @@
 
 
 .logo {
-
-  width: 48px;
-  height: 48px;
+  object-fit: contain;
+  width: 42px;
   z-index: 100;
   border-radius: 4px;
 }
 
 .logo1 {
-  width: 42px;
+  object-fit: contain;
+  width: 52px;
 }
 
 .bar1 {
@@ -407,7 +409,7 @@
 
 .card-content {
   width: 100%;
-  height: 80%;
+  height: 100%;
   max-width: 1300px;
   max-height: 305px;
   margin-left: 86px;
@@ -583,7 +585,7 @@
     margin: 2px 0px;
   }
   .card-experience{
-    padding-top: 1em;
+    padding-top: 0.5em;
   }
 
   .card-case {
@@ -601,14 +603,14 @@
     left: 160px;
   }
   .header-logo1{
-    top: 475px;
-    left: 100px;
+    top: 660px;
+    left: 140px;
     
   }
 
   .arrow-container-2{
-    top: 50px;
-    left: 22px;
+    top: 63px;
+    left: 27px;
     transform: rotate(90deg);
 
   }
@@ -624,7 +626,7 @@
     z-index: -1;
   }
   .card-content {
-    width: 82%;
+    width: 95%;
     height: auto;
     max-width: 410px;
     max-height: none;
@@ -639,7 +641,9 @@
   }
 
   .header-1{
-   max-width: 1000px; 
+    display: flex;
+    flex-direction: column;
+   width: 100%; 
   }
 
   .company {

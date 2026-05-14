@@ -5,19 +5,18 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  position: sticky;
-  top: 0;
-  right: 10px;
   z-index: 1000;
   isolation: isolate;
+  margin-top: 1rem;
+  border-radius: 100%;
 
   
 }
 .header-flex{
-  width: 1200px;
+  width: 1000px;
   height: 75px;
   display: flex;
-  position: relative;
+  gap: 10%;
   flex-direction: row;
   background-color: rgba(255, 255, 255,0.4) ;
   margin-top: 10px;
@@ -71,20 +70,20 @@
 
 .resume-button{
 
-  background-color: rgba(255, 255, 255,0.8);
+  
   color: rgba(0, 0, 0,0.65);
   border-color:rgba(0, 132, 255, 0.05);
   cursor: pointer;
   font-family: "Space Grotesk", sans-serif;
-  padding: 10px 5px;
-  border-radius: 100%;
+  padding: 10px 10px;
+  border-radius: 50%;
   font-weight: 0px;
   transition: background-color 0.2s;
-  transition: all 0.2s;
+  transition: all 0.5s ease-in-out;
 
 }
 .resume-button:hover{
-  background-color: rgba(0, 0, 0,0.05);
+  background-color:rgba(0, 132, 255, 0.051);
   color: rgb(38, 38, 38);
       
 }
@@ -108,9 +107,10 @@
 
 
 .container-darkmode{
+  display: flex;
   font-size: 32px;
-  height: 32px;
-  width: 32px;
+  height: 42px;
+  width: 42px;
   align-items: center;
   padding-top: 10px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -124,7 +124,7 @@
 }
 
 .container-darkmode:hover{
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color:rgba(0, 132, 255, 0.051);
 }
   
 
@@ -152,7 +152,7 @@
 }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1024px) {
 
   .allheader-flex{
     justify-content: center;
@@ -160,7 +160,7 @@
   }
 
   .header-flex{
-    width:750px;         
+    width:70%;         
 
   
   }
@@ -171,7 +171,8 @@
 
 @media screen and (max-width: 768px) {
   .allheader-flex{
-    justify-content: space-between;
+    width: 100%;
+    right: 0%;
     padding: 0 0px;
   }
 
@@ -184,8 +185,6 @@
     padding-right: 15px;
     margin-top: 0;
   }
-
-  
 
   .right-sider{
     display: none !important;
@@ -206,9 +205,9 @@
   }
 
   .container-darkmode{
-    font-size: 28px;
-    height: 28px;
-    width: 28px;
+    font-size: 38px;
+    height: 32px;
+    width: 3px;
     position: fixed;
     top: 20px;
     right: 90px;
@@ -217,9 +216,13 @@
 }
 
 @media screen and (max-width: 480px) {
-
+  .allheader-flex{
+    border-radius: 1000%;
+  }
   .header-flex{
+    width: 310px;
     height: 55px;
+   
   }
   
   .projet-button {
@@ -228,11 +231,12 @@
   }
   
   .container-darkmode{
-    top: 24px;
-    left: 2800px;
-    font-size: 20px;
-    height: 20px;
-    width: 20px;
+    position: relative;
+    top: 0px;
+    right:10px ;
+    font-size: 28px;
+    height: 42px;
+    width: 42px;
   }
   
   .icon-burger-container{

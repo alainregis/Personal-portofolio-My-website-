@@ -1,5 +1,7 @@
 
-
+body{
+  overflow-x: hidden;
+}
 button {
   font-family: "Space Grotesk", sans-serif;
 }

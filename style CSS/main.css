@@ -1,6 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
 body {
+  width: 100%;
   overflow-x: hidden;
   background-color: rgba(0, 132, 255, 0.051);
   font-family: "Space Grotesk", sans-serif;
   margin: 0;
+ 
 }
