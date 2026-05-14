@@ -98,7 +98,7 @@
 
   .label-contact {
     grid-template-rows: auto;
-    width: calc(49% - 32px);
+    width: calc(75% - 32px);
     place-items: start;
     margin-inline: auto;
   }
