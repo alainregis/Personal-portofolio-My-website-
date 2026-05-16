@@ -155,14 +155,17 @@
 @media screen and (max-width: 1024px) {
 
   .allheader-flex{
-    justify-content: center;
+    justify-content: space-between;
   
   }
 
   .header-flex{
-    width:70%;         
+    width:90%;         
 
   
+  }
+  .right-sider{
+    gap: 1%;
   }
 
 

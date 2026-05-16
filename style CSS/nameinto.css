@@ -65,7 +65,8 @@ body {
 }
 .all-role{
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem ;
   justify-content: center;
 
 }
@@ -146,8 +147,8 @@ body {
 
 .cv-container{
   font-family:"Space Grotesk", sans-serif ;
-  font-size: 24px;
-  font-weight:600;
+  font-size: clamp(1.4rem,2vw,4rem);
+   font-weight:600;
   background-color:  rgba(0, 132, 255, 0.1);
   color: rgb(0, 0, 0,0.8);
   padding: 10px 10px;
@@ -157,11 +158,13 @@ body {
 }
 
 .icon-arrow{
+  display: flex;
   background-color: rgba(0, 132, 255, 0.1);
   color: rgba(0, 0, 0,0.9);
   font-size: 28px;
   font-weight: bolder;
-  height: 30px;
+  width:48px ;
+  height: 48px;
   align-items: center;
   padding: 10px 10px;
   border-radius: 64px;

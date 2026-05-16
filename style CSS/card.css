@@ -498,7 +498,7 @@
     width: 100%;
     height: 100%;
     max-width: 1000px;
-    max-height: 450px;
+    max-height: 6500px;
     margin-left: 0;
     margin-bottom: 20px;
     padding: 16px;
@@ -553,7 +553,7 @@
     left: 59px;
   }
   .header-logo1 {
-    top:420px;
+    top:710px;
     left:20px;
     z-index: -1;
 
